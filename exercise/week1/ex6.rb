@@ -14,7 +14,7 @@ Another way is to use the round function as follows:
 puts (x*100).round/100.0
 
 =end
-
+=begin
 def convert(temp_in_fahrenheit)
   (((temp_in_fahrenheit - 32) * 5/9)*100).round/100.0
 end
@@ -22,3 +22,10 @@ end
 temp_in_fahrenheit = 98.6
 
 puts "#{temp_in_fahrenheit} degree Fahrenheit is equal to #{convert(temp_in_fahrenheit)} degree Celsius."
+=end
+
+def fahrenheit_to_celsius(temp = 0)
+  (((temp - 32) * 5/9)*100).round/100.0
+end
+temprature = 98.6
+puts "#{temprature} degree Fahrenheit = #{fahrenheit_to_celsius(temprature)} degree Celsius."
